@@ -12,14 +12,14 @@ function writeOutput(operator,beforeCalc,aftercalc){
 function add(){
     const enteredNumber = getUserInput();
     const secondNumber = currentResult;
-    currentResult = currentResult + enteredNumber;
+    currentResult += enteredNumber;
     writeOutput('+',secondNumber,enteredNumber)
     
 }
 function sub(){
     const enteredNumber = getUserInput();
     const secondNumber = currentResult;
-    currentResult = currentResult - enteredNumber;
+    currentResult -= enteredNumber;
     writeOutput('-',secondNumber,enteredNumber)
 
 }
@@ -27,14 +27,14 @@ function sub(){
 function mul(){
     const enteredNumber = getUserInput();
     const secondNumber = currentResult;
-    currentResult = currentResult * enteredNumber;
+    currentResult *= enteredNumber;
     writeOutput('*',secondNumber,enteredNumber)
 }
 
 function div(){
     const enteredNumber = getUserInput();
     const secondNumber = currentResult;
-    currentResult = currentResult / enteredNumber;
+    currentResult /= enteredNumber;
     writeOutput('/',secondNumber,enteredNumber)
 }
 
